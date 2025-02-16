@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpEdu.src
+﻿namespace CSharpEdu.src
 {
 	// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
 	internal class VarTypes
@@ -26,6 +20,7 @@ namespace CSharpEdu.src
 
 		public VarTypes TestIntegers()
 		{
+			Console.WriteLine($"Running {nameof(TestIntegers)}:");
 			int one = 1;
 			int ten = 10;
 			Console.WriteLine($"Integers: one / ten = {one / ten}"); // = 0, because result of operations between integers is also an integer, everything after the point is discarded
@@ -46,6 +41,7 @@ namespace CSharpEdu.src
 
 		public VarTypes TestFloats()
 		{
+			Console.WriteLine($"Running {nameof(TestFloats)}:");
 			Console.WriteLine($"(float) 1 / 10 = {(float)1 / 10}"); // = 0.1, when one of the int operands is explicitly converted to a float or a double, then all operands implicitly converted to the same float/double
 			Console.WriteLine($"10f / 3f = {10f / 3f}"); // 3.33333.... with some deviation in the end due to the supported precision and problem of representing decimal values with binary code
 
@@ -57,6 +53,7 @@ namespace CSharpEdu.src
 		char singleCharacter = 'A'; // 16 bit, unicode symbols from U+0000 to U+FFFF
 		public VarTypes TestChars()
 		{
+			Console.WriteLine($"Running {nameof(TestChars)}:");
 			var chars = new[]
 			{
 				'j',
@@ -75,6 +72,7 @@ namespace CSharpEdu.src
 		public bool boolVar = false; // we can change it on instance of the class
 		public VarTypes TestBools()
 		{
+			Console.WriteLine($"Running {nameof(TestBools)}:");
 			if (boolVar)
 				Console.WriteLine("boolVar is TRUE");
 			else
