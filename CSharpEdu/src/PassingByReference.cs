@@ -4,6 +4,8 @@
 	{
 		public static void TestPassingByReference()
 		{
+			Console.WriteLine($"Running {nameof(TestPassingByReference)}:");
+
 			List<string> list = null;
 			AddString(list);
 			Console.WriteLine("Is list null after assigment inside another function as an argument to that function: " + (list is null));

@@ -3,19 +3,25 @@ using CSharpEdu.src;
 
 Console.WriteLine("Hello, World!");
 
-var vartypes = new VarTypes();
-vartypes.TestIntegers()
-	.TestFloats()
-	.TestChars();
+//var vartypes = new VarTypes()
+//	.TestIntegers()
+//	.TestFloats()
+//	.TestChars();
 
-var structs = new Structs().TestStructs();
+//var structs = new Structs().TestStructs();
 
-var delegates = new Delegates().TestDelegates();
+//var delegates = new Delegates().TestDelegates();
 
-GenericsEqualityTest.TestStringsEquality();
+//GenericsEqualityTest.TestStringsEquality();
 
-var closuresTests = new ClosuresTests().TestIteratorValueClosure();
+//var closuresTests = new ClosuresTests().TestIteratorValueClosure();
 
-var arrays = new Arrays().TestArrays();
+//var arrays = new Arrays().TestArrays();
 
-PassingByReference.TestPassingByReference();
+//PassingByReference.TestPassingByReference();
+
+//var spanTest = new SpanTest().RunSpanTests();
+
+EnumsTest.TestEnumFlags();
+ClassIndexerTest.TestDifferentIndexing();
+AnonimousTypeVSRecord.Test();
