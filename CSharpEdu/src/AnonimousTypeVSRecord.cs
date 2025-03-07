@@ -15,9 +15,11 @@ namespace CSharpEdu.src
 
 
 
-        public static void Test()
+        public static void TestAnonimousTypeVSRecord()
         {
-            var data = new { Name = "MyName", Age = 35 };
+			Console.WriteLine($"Running {nameof(TestAnonimousTypeVSRecord)}:");
+
+			var data = new { Name = "MyName", Age = 35 };
             var dataType = data.GetType();
 
 			Console.WriteLine(IsCompilerGenerated(typeof(UserClass).GetMethod("ToString")));  // False

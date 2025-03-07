@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using CSharpEdu.src;
+using CSharpEdu.src.LINQ;
 
 Console.WriteLine("Hello, World!");
 
@@ -8,7 +8,9 @@ Console.WriteLine("Hello, World!");
 //	.TestFloats()
 //	.TestChars();
 
-//var structs = new Structs().TestStructs();
+//var structs = new Structs()
+//	.TestStructsModification()
+//	.TestComparison();
 
 //var delegates = new Delegates().TestDelegates();
 
@@ -22,6 +24,10 @@ Console.WriteLine("Hello, World!");
 
 //var spanTest = new SpanTest().RunSpanTests();
 
-EnumsTest.TestEnumFlags();
-ClassIndexerTest.TestDifferentIndexing();
-AnonimousTypeVSRecord.Test();
+//EnumsTest.TestEnumFlags();
+//ClassIndexerTest.TestDifferentIndexing();
+//AnonimousTypeVSRecord.TestAnonimousTypeVSRecord();
+
+//TuplesTest.TestTuples();
+
+LINQTest.RunAllLINQTests();
